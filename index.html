@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment System</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="refresh" content="5; url=qrcode.html">
+    <!-- The line above sets the page to redirect after 5 seconds -->
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to St. Vincent College Enrollment System</h1>
+        <p>You will be redirected to the QR code generation page shortly.</p>
+        <p>If you are not redirected automatically, <a href="qrcode.html">click here</a>.</p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Your Enrollment QR Code</h1>
+        <form id="enrollmentForm">
+            <label for="studentName">Full Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+            
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" required>
+            
+            <button type="button" onclick="generateQRCode()">Generate QR Code</button>
+        </form>
+        
+        <div id="qrcode"></div>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
